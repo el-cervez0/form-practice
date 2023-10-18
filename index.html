@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Front-end foundations: HTML forms</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main>
+        <h1>Hit My Line</h1>
+        <h2>Hit My Line</h2>
+        <h3>Hit My Line</h3>
+        <div class="container">
+      <form>
+        <ul class="flex-outer">
+            <li>
+                <label for="name">first name:</label>
+                <input id="first-name" type="text" name="firstName" placeholder="Enter your first name here" />
+            </li>
+            <li>
+                <label for="name">last name:</label>
+                <input id="last-name" type="text" name="lastName" placeholder="Enter your last name here" />
+            </li>
+            <li>
+                <label for="email">Email:</label>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email here"
+                  required
+                />
+            </li>
+            <li>
+                <label for="form-message">ur message:</label>
+                <textarea 
+                id="form-message" 
+                name="message"
+                autofocus="on"
+                rows="6"
+                placeholder="Enter your message here"
+                required
+                ></textarea>
+            </li>
+            <li>
+                <p>Age</p>
+                <ul class="flex-inner">
+                    <li>
+                        <input type="checkbox" id="twenty-to-twentynine">
+                        <label for="twenty-to-twentynine">20-29</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="thirty-to-thirtynine">
+                        <label for="thirty-to-thirtynine">30-39</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="fourty-to-sixtytwo">
+                        <label for="fourty-to-sixtytwo">40-62</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="sixtytwo-and-up">
+                        <label for="sixtytwo-and-up">62+</label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <button type="submit">Submit</button>
+            </li>
+            </ul>
+      </form>
+    </div>
+    </main>
+  </body>
+</html>
